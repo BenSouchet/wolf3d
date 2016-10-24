@@ -6,12 +6,11 @@
 /*   By: bsouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/06 15:33:54 by bsouchet          #+#    #+#             */
-/*   Updated: 2016/10/24 19:48:05 by bsouchet         ###   ########.fr       */
+/*   Updated: 2016/10/24 20:03:09 by bsouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "wolf3d.h"
-#include <stdio.h>
 
 static void		draw_wall(t_var *v, int y, int clr)
 {
@@ -47,8 +46,8 @@ static void		execute_raycasting(t_var *v, int x, double tx, double ty)
 		tx += cos(((v->p_r + v->ray) - 90.) * (PI / 180.)) * 0.003;
 		ty += sin(((v->p_r + v->ray) - 90.) * (PI / 180.)) * 0.003;
 	}
-	tx = (!(tx >= (I(tx) + 0.0029) && tx <= (I(tx) + 0.9971))) ? round(tx) : tx;
-	ty = (!(ty >= (I(ty) + 0.0029) && ty <= (I(ty) + 0.9971))) ? round(ty) : ty;
+	tx = (!(tx >= (I(tx) + 0.0030) && tx <= (I(tx) + 0.9970))) ? round(tx) : tx;
+	ty = (!(ty >= (I(ty) + 0.0030) && ty <= (I(ty) + 0.9970))) ? round(ty) : ty;
 	v->dist = (sqrt(pow((tx - v->posx), 2.) + pow((ty - v->posy), 2.)) *
 	cos(v->ray * (PI / 180.)));
 	height = round(((v->s_dist - 200.) / v->dist) / 2.);
