@@ -6,7 +6,7 @@
 /*   By: bsouchet <bsouchet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/02 17:26:10 by bsouchet          #+#    #+#             */
-/*   Updated: 2016/10/20 17:47:51 by bsouchet         ###   ########.fr       */
+/*   Updated: 2016/10/24 18:24:25 by bsouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,7 @@ typedef struct	s_var
 	double		p_y;
 	double		p_r;
 	double		ray;
+	double		val;
 	double		dist;
 	double		posx;
 	double		posy;
@@ -121,6 +122,7 @@ typedef struct	s_var
 	void		*cl;
 	int			min;
 	int			max;
+	int			p_height;
 }				t_var;
 
 int				check(t_var *v);
@@ -143,6 +145,9 @@ int				motion_hook(int x, int y, t_var *v);
 void			player_transform(t_var *v);
 
 void			start_screen(t_var *v);
+
+void			import_textures(t_var *v);
+void			draw_textured_wall(t_var *v, double tx, double ty, int y);
 
 void			draw_mm(t_var *v, int x, int y, int m);
 void			draw_mm_hardcore(t_var *v, int x, int y, int clr);

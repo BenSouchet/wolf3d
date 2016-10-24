@@ -85,15 +85,15 @@ void mlx_loop(mlx_ptr_t *mlx_ptr)
 
 int     mlx_put_pixel(mlx_img_list_t *img, int x, int y, int clr)
 {
-    unsigned int    p;
+    //unsigned int    p;
 
     if (x < 0 || x >= img->width || y < 0 || y >= img->height)
         return (0);
-    p = (x * UNIQ_BPP) + (y * (img->width * UNIQ_BPP));
-	img->buffer[p] = clr;
-	img->buffer[p + 1] = clr >> 8;
-	img->buffer[p + 2] = clr >> 16;
-	img->buffer[p + 3] = clr >> 24;
+    *((int *)&img->buffer[(x * UNIQ_BPP) + (y * (img->width * UNIQ_BPP))]) = clr;
+	//img->buffer[p] = clr;
+	//img->buffer[p + 1] = clr >> 8;
+	//img->buffer[p + 2] = clr >> 16;
+	//img->buffer[p + 3] = clr >> 24;
     return (0);
 }
 

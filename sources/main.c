@@ -6,7 +6,7 @@
 /*   By: bsouchet <bsouchet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/02 17:30:09 by bsouchet          #+#    #+#             */
-/*   Updated: 2016/10/20 18:19:21 by bsouchet         ###   ########.fr       */
+/*   Updated: 2016/10/24 15:19:10 by bsouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,19 +37,6 @@ static int		convert(t_var *v)
 	}
 	free(v->buf);
 	return (0);
-}
-
-void			import_textures(t_var *v)
-{
-	v->ui = mlx_xpm_to_img(v->mlx, "./assets/images/ui/normal.xpm");
-	v->ui_t = mlx_xpm_to_img(v->mlx, "./assets/images/ui/normal_t.xpm");
-	v->ps = mlx_xpm_to_img(v->mlx, "./assets/images/start/prods.xpm");
-	v->ss = mlx_xpm_to_img(v->mlx, "./assets/images/start/start.xpm");
-	v->wt = mlx_xpm_to_img(v->mlx, "./assets/images/textures/wall.xpm");
-	v->fl = mlx_xpm_to_img(v->mlx, "./assets/images/textures/sand.xpm");
-	v->cl = mlx_xpm_to_img(v->mlx, "./assets/images/textures/ceilling.xpm");
-	v->hr = mlx_xpm_to_img(v->mlx, "./assets/images/ui/hardcore.xpm");
-	v->hr_t = mlx_xpm_to_img(v->mlx, "./assets/images/ui/hardcore_t.xpm");
 }
 
 static void		init_values(t_var *v)

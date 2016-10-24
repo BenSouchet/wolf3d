@@ -6,7 +6,7 @@
 /*   By: bsouchet <bsouchet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/22 15:36:51 by bsouchet          #+#    #+#             */
-/*   Updated: 2016/10/21 16:59:50 by bsouchet         ###   ########.fr       */
+/*   Updated: 2016/10/24 14:50:18 by bsouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,13 +46,13 @@ void			key_operations(t_var *v)
 	else if (v->t != 1)
 		v->sp = (v->k[257] != 0 || v->k[258] != 0) ? .8 : .5;
 	else if (v->h != 1)
-		v->sp = (v->k[257] != 0 || v->k[258] != 0) ? 1.7 : 1.4;
+		v->sp = (v->k[257] != 0 || v->k[258] != 0) ? 1.755 : 1.55;
 	else
-		v->sp = (v->k[257] != 0 || v->k[258] != 0) ? 1.250 : 1.445;
+		v->sp = (v->k[257] != 0 || v->k[258] != 0) ? 1.250 : 1.245;
 	if (v->k[12] != 0 || v->k[123] != 0)
-		v->p_r -= 3.;
+		v->p_r -= 3.5;
 	if (v->k[14] != 0 || v->k[124] != 0)
-		v->p_r += 3.;
+		v->p_r += 3.5;
 }
 
 void			key_transform(t_var *v, double px, double py)
@@ -72,7 +72,7 @@ void			key_transform(t_var *v, double px, double py)
 	v->posy = (v->map[(int)py][(int)v->posx][2] != '1') ? py : v->posy;
 	if (v->k[1] != 0 || v->k[125] != 0)
 		px -= sin(v->p_r * (PI / 180.)) * (STEP_L * v->sp);
-	v->posx = (v->map[(int)v->posy][(int)px][2] != '1') ? px : v->posx;	
+	v->posx = (v->map[(int)v->posy][(int)px][2] != '1') ? px : v->posx;
 	if (v->k[13] != 0 || v->k[126] != 0)
 		py -= cos(v->p_r * (PI / 180.)) * (STEP_L * v->sp);
 	v->posy = (v->map[(int)py][(int)v->posx][2] != '1') ? py : v->posy;

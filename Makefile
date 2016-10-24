@@ -6,7 +6,7 @@
 #    By: bsouchet <bsouchet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/02/04 18:49:05 by bsouchet          #+#    #+#              #
-#    Updated: 2016/10/06 15:39:57 by bsouchet         ###   ########.fr        #
+#    Updated: 2016/10/24 16:26:18 by bsouchet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ C = clang
 
 NAME = wolf3d
 
-FLAGS = -Wall -Wextra -Werror -O3
+FLAGS = -Wall -Wextra -Werror -O2
 
 LIBFT = libft
 
@@ -32,12 +32,16 @@ SOURCES = main.c \
 		  draw.c \
 		  check.c \
 		  minimap.c \
+		  textures.c \
 		  raycasting.c \
 		  misc.c
 
 SRCS = $(addprefix $(DIR_S)/,$(SOURCES))
 
 OBJS = $(addprefix $(DIR_O)/,$(SOURCES:.c=.o))
+
+opti:
+	@$(MAKE) all -j
 
 all: temporary $(NAME)
 
@@ -70,6 +74,7 @@ fclean: clean
 	@make fclean -C $(LIBFT)
 	@make fclean -C $(DIR_MLX)
 
-re: fclean all
+re: fclean
+	@$(MAKE) all -j
 
-.PHONY: all, temporary, norme, clean, fclean, re
+.PHONY: temporary, norme, clean
