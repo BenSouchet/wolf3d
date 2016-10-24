@@ -6,7 +6,7 @@
 /*   By: bsouchet <bsouchet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/02 17:26:10 by bsouchet          #+#    #+#             */
-/*   Updated: 2016/10/24 18:24:25 by bsouchet         ###   ########.fr       */
+/*   Updated: 2016/10/24 19:48:17 by bsouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,6 +123,7 @@ typedef struct	s_var
 	int			min;
 	int			max;
 	int			p_height;
+	int			tmp;
 }				t_var;
 
 int				check(t_var *v);

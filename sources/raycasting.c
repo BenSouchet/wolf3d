@@ -6,7 +6,7 @@
 /*   By: bsouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/06 15:33:54 by bsouchet          #+#    #+#             */
-/*   Updated: 2016/10/24 19:34:39 by bsouchet         ###   ########.fr       */
+/*   Updated: 2016/10/24 19:48:05 by bsouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,14 +52,15 @@ static void		execute_raycasting(t_var *v, int x, double tx, double ty)
 	v->dist = (sqrt(pow((tx - v->posx), 2.) + pow((ty - v->posy), 2.)) *
 	cos(v->ray * (PI / 180.)));
 	height = round(((v->s_dist - 200.) / v->dist) / 2.);
-	if (x == v->x && x != 214 && height >= (v->p_height + 20))
+	v->tmp = ((height > (WIN_H / 2)) == 1) ? WIN_H / 2 : height;
+	if (x == v->x && x != 214 && v->tmp >= (v->p_height + 20))
 		execute_raycasting(v, (x + 15), v->posx, v->posy);
 	else
 		wall_color_detection(v, tx, ty);
 	v->min = ((WIN_H / 2) - height);
 	v->max = ((WIN_H / 2) + height);
 	y = (v->min < -1) ? -1 : v->min;
-	if (x == v->x && (v->p_height = height) != 0)
+	if (x == v->x && (v->p_height = v->tmp) != 0)
 		(v->t != 1) ? draw_wall(v, y, 0) : draw_textured_wall(v, tx, ty, y);
 }
 
