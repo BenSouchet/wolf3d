@@ -3,6 +3,7 @@
 Wolf3D is a program developed for my learning course at 42 school.<br/><br/>
 The objective of this project is to recreate the principle of ray casting of the famous game Wolfenstein.<br/>
 For this we have to realize in C all necessary functions without using graphic libraries (except the Libmlx library required to create a window on MacOS provided by the 42 school).<br/><br/>
+PS : This game has not a real goal, you can simply explore the mazes.<br/><br/>
 <img align="center" src="http://i.imgur.com/SRtIgLN.png" width="100%" />
 Several options are available (see [Keyboard shortcuts](https://github.com/BenjaminSouchet/Wolf3D#keyboard-shortcuts) or/and [Mouse controls](https://github.com/BenjaminSouchet/Wolf3D#mouse-controls) sections for more infos) :
 * Move in any directions (sideways movements included)
