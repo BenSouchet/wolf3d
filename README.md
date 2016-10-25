@@ -97,6 +97,10 @@ Open one maze map ⇣
 <td valign="top" align="center"><kbd>&nbsp;Z&nbsp;</kbd></td>
 </tr>
 <tr>
+<td valign="top" height="30px">Play / Pause the current song</td>
+<td valign="top" align="center"><kbd>&nbsp;P&nbsp;</kbd></td>
+</tr>
+<tr>
 <td valign="top" height="30px">Switch to the first song</td>
 <td valign="top" align="center"><kbd>&nbsp;1&nbsp;</kbd></td>
 </tr>
