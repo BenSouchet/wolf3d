@@ -32,7 +32,7 @@ Example :
 
 Open one maze map ⇣
 ```bash
-./fractol maps/good/Maze_Large.w3d
+./wolf3d maps/good/Maze_Large.w3d
 ```
 ## Keyboard shortcuts
 
