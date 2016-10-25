@@ -5,13 +5,15 @@ The objective of this project is to recreate the principle of ray casting of the
 For this we have to realize in C all necessary functions without using graphic libraries (except the Libmlx library required to create a window on MacOS provided by the 42 school).<br/><br/>
 <img align="center" src="http://i.imgur.com/SRtIgLN.png" width="100%" />
 Several options are available (see [Keyboard shortcuts](https://github.com/BenjaminSouchet/Wolf3D#keyboard-shortcuts) or/and [Mouse controls](https://github.com/BenjaminSouchet/Wolf3D#mouse-controls) sections for more infos) :
-* Zoom and unzoom
-* Change the number of iterations
-* Move the current fractal
-* Rotate by step of 90°
-* Edit the display gradient
-* Navigate between the three fractals
-* Edit the shape of the fractal with the position of the mouse (only available with the fractal Julia)
+* Move in any directions (sideways movements included)
+* Rotation with keys (or mouse position)
+* Textured Mode (with floor and ceil casting)
+* Walls collision (with an slight realistic offset)
+* Minimap with rotation according to the player rotation
+* Fire Torch Lighting simulation (in Normal & Hardcore Mode only)
+* Several songs (with Selection of track / Play / Pause and Stop options)
+* Hardcore Mode & Easy Mode
+* Ambient occlusion
 
 ## Install & launch
 ```bash
@@ -103,7 +105,7 @@ Open one maze map ⇣
 </tr>
 <tr>
 <td valign="top" height="30px">Display the Julia fractal</td>
-<td valign="top" align="center"><kbd>&nbsp;1&nbsp;</kdb></td>
+<td valign="top" align="center"><kbd>&nbsp;1&nbsp;</kbd></td>
 </tr>
 <tr>
 <td valign="top" height="30px">Display the Mandelbrot fractal</td>
