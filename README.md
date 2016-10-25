@@ -89,6 +89,14 @@ Open one maze map ⇣
 <td valign="top" align="center"><kbd>&nbsp;►&nbsp;</kbd> or <kbd>&nbsp;E&nbsp;</kbd></td>
 </tr>
 <tr>
+<td valign="top" height="30px">Hardcore Mode Switcher</td>
+<td valign="top" align="center"><kbd>&nbsp;H&nbsp;</kbd></td>
+</tr>
+<tr>
+<td valign="top" height="30px">Easy Mode Switcher</td>
+<td valign="top" align="center"><kbd>&nbsp;Z&nbsp;</kbd></td>
+</tr>
+<tr>
 <td valign="top" height="30px">Switch to the first song</td>
 <td valign="top" align="center"><kbd>&nbsp;1&nbsp;</kbd></td>
 </tr>
@@ -122,15 +130,15 @@ Open one maze map ⇣
 <tbody>
 <tr>
 <td valign="top" height="30px">Change the view according to the mouse position in the window</td>
-<td valign="top" align="center"><kbd>&nbsp;Move the cusor in the window&nbsp;</kbd></td>
+<td valign="top" align="center">&nbsp;Move the cusor in the window&nbsp;</td>
 </tr>
 <tr>
 <td valign="top" height="30px">Rotate to the left</td>
-<td valign="top" align="center"><kbd>&nbsp;Stay the cursor in left side of the window&nbsp;</kbd></td>
+<td valign="top" align="center">&nbsp;Stay the cursor in left side of the window&nbsp;</td>
 </tr>
 <tr>
 <td valign="top" height="30px">Rotate to the right</td>
-<td valign="top" align="center"><kbd>&nbsp;Stay the cursor in right side of the window&nbsp;</kbd></td>
+<td valign="top" align="center">&nbsp;Stay the cursor in right side of the window&nbsp;</td>
 </tr>
 </tbody>
 </table>
