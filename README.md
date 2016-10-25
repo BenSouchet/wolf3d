@@ -66,19 +66,27 @@ Open one maze map ⇣
 </tr>
 <tr>
 <td valign="top" height="30px">Make a step forward</td>
-<td valign="top" align="center"><kbd>&nbsp;▲&nbsp;</kbd></td>
+<td valign="top" align="center"><kbd>&nbsp;▲&nbsp;</kbd> or <kbd>&nbsp;W&nbsp;</kbd></td>
 </tr>
 <tr>
 <td valign="top" height="30px">Make a step backward</td>
-<td valign="top" align="center"><kbd>&nbsp;▼&nbsp;</kbd></td>
+<td valign="top" align="center"><kbd>&nbsp;▼&nbsp;</kbd> or <kbd>&nbsp;S&nbsp;</kbd></td>
 </tr>
 <tr>
 <td valign="top" height="30px">Make a step to the left</td>
-<td valign="top" align="center"><kbd>&nbsp;◄&nbsp;</kbd></td>
+<td valign="top" align="center"><kbd>&nbsp;A&nbsp;</kbd></td>
 </tr>
 <tr>
 <td valign="top" height="30px">Make a step to the left</td>
-<td valign="top" align="center"><kbd>&nbsp;►&nbsp;</kbd></td>
+<td valign="top" align="center"><kbd>&nbsp;D&nbsp;</kbd></td>
+</tr>
+<tr>
+<td valign="top" height="30px">Rotate to the left</td>
+<td valign="top" align="center"><kbd>&nbsp;◄&nbsp;</kbd> or <kbd>&nbsp;Q&nbsp;</kbd></td>
+</tr>
+<tr>
+<td valign="top" height="30px">Rotate to the right</td>
+<td valign="top" align="center"><kbd>&nbsp;►&nbsp;</kbd> or <kbd>&nbsp;E&nbsp;</kbd></td>
 </tr>
 <tr>
 <td valign="top" height="30px">Switch to the first song</td>
