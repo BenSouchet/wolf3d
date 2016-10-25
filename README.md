@@ -130,15 +130,15 @@ Open one maze map ⇣
 <tbody>
 <tr>
 <td valign="top" height="30px">Change the view according to the mouse position in the window</td>
-<td valign="top" align="center">&nbsp;Move the cusor in the window&nbsp;</td>
+<td valign="top" align="center"><kbd>&nbsp;Move the cusor in the window&nbsp;</kbd></td>
 </tr>
 <tr>
 <td valign="top" height="30px">Rotate to the left</td>
-<td valign="top" align="center">&nbsp;Stay the cursor in left side of the window&nbsp;</td>
+<td valign="top" align="center"><kbd>&nbsp;Stay the cursor in left side of the window&nbsp;</kbd></td>
 </tr>
 <tr>
 <td valign="top" height="30px">Rotate to the right</td>
-<td valign="top" align="center">&nbsp;Stay the cursor in right side of the window&nbsp;</td>
+<td valign="top" align="center"><kbd>&nbsp;Stay the cursor in right side of the window&nbsp;</kbd></td>
 </tr>
 </tbody>
 </table>
