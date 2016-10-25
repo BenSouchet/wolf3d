@@ -1,9 +1,10 @@
 # Wolf3D
 
 Wolf3D is a program developed for my learning course at 42 school.<br/>
-The objective of this project is to recreate the principle of ray casting of the famous game Wolfenstein. For this we have to realize in C all necessary functions without using graphic libraries (except the Libmlx library required to create a window on MacOS provided by the 42 school).
+The objective of this project is to recreate the principle of ray casting of the famous game Wolfenstein.<br/>
+For this we have to realize in C all necessary functions without using graphic libraries (except the Libmlx library required to create a window on MacOS provided by the 42 school).
 <img align="center" src="http://i.imgur.com/SRtIgLN.png" width="100%" />
-Several options are available (see [Keyboard shortcuts](https://github.com/Raiden-kazua/Fractol#keyboard-shortcuts) or/and [Mouse controls](https://github.com/Raiden-kazua/Fractol#mouse-controls) sections for more infos) :
+Several options are available (see [Keyboard shortcuts](https://github.com/BenjaminSouchet/Wolf3D#keyboard-shortcuts) or/and [Mouse controls](https://github.com/BenjaminSouchet/Wolf3D#mouse-controls) sections for more infos) :
 * Zoom and unzoom
 * Change the number of iterations
 * Move the current fractal
@@ -18,11 +19,11 @@ git clone https://github.com/BenjaminSouchet/Wolf3D ~/Wolf3D
 cd ~/Wolf3D && ./wolf3d maps/good/Maze_Medium.w3d
 ```
 You have to launch the program with a parameter. This is the name of the map you would like open at the execution of the program. This parameter as to be the name of a valid map, below the list of available maps :<br />
-maps/good/Basic_00.w3d<br />
-maps/good/Basic_01.w3d<br />
-maps/good/Maze_Small.w3d<br />
-maps/good/Maze_Medium.w3d<br />
-maps/good/Maze_Large.w3d<br />
+*maps/good/Basic_00.w3d*<br />
+*maps/good/Basic_01.w3d*<br />
+*maps/good/Maze_Small.w3d*<br />
+*maps/good/Maze_Medium.w3d*<br />
+*maps/good/Maze_Large.w3d*<br />
 
 Example :
 
