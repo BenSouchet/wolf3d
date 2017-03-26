@@ -17,6 +17,7 @@ Several options are available (see [Keyboard shortcuts](https://github.com/Benja
 * Ambient occlusion
 
 ## Install & launch
+
 ```bash
 git clone https://github.com/BenjaminSouchet/Wolf3D ~/Wolf3D
 cd ~/Wolf3D && ./wolf3d maps/good/Maze_Medium.w3d
@@ -118,6 +119,7 @@ Open one maze map ⇣
 </tr>
 </tbody>
 </table>
+
 ## Mouse controls
 
 <table width="100%">
@@ -146,5 +148,7 @@ Open one maze map ⇣
 </tr>
 </tbody>
 </table>
+
 ## Contact & contribute
-If you want to contact me, or fix / improve Fractol, just send me a mail at **bsouchet@student.42.fr**
+
+If you want to contact me, or fix / improve this project, just send me a mail at **bsouchet@student.42.fr**
